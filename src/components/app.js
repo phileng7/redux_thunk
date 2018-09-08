@@ -7,13 +7,15 @@ class App extends Component {
     this.props.fetchUsers();
   }
 
-  renderUser({id, name, email}) {
+  renderUser({id, name, email, address}) {
     return (
-      <li className="list-group-item" key={id}>
-        <span className="label label-defualt label-pill pull-xs-right">
+      <li className="list-group-item" key={id}>   
+        <div className="user">
+          {name}, City:{address.city}
+        </div>     
+        <span className="badge badge-default badge-pill pull-xs-right">
           <a href={email}>{email}</a>
-        </span>
-        {name}
+        </span>  
       </li>
     );
   }

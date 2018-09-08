@@ -1,5 +1,11 @@
 body {
-  margin: 0;
-  padding: 0;
+  margin: 10;
+  padding: 10;
   font-family: sans-serif;
+}
+
+.list-group-item {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
